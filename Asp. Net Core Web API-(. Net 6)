@@ -1,0 +1,106 @@
+CREATING API PROJECT:
+	New project->API .Net core Web API  (ExampleInNetCore)
+	
+
+HHTP Request PipeLine:
+
+	Pipelining involves a client sending multiple HTTP requests to a server without waiting for a response. Responses must then be returned from the server in the same sequence that the requests were received.
+	
+Look at the API Project created by Visual Studio:
+	• Program.cs file-->When we run program file it only run first -->It has http request pipeline
+	• Appsettings. json file->It is an application configure file used to store configure file and database application file
+	• Controller folder--->It hold APIs in the form of API controller.
+	• ASP. Net core support creating REST full services also known as Web API using C#.
+	• Controllers in the web api are classes which derived from the controller base class and it will be have http verbs and methods like Get,  post ,put and patch.
+	
+Rest APIs:
+	• REST API is also know as REST full API is an API that confirm to the constrain of REST Arcitecture style and allows for interacting with Restfull web services. When a client request is made by Restfull API it transfer the representation of state  of resource to the end point. This information is one or several format by http protocol. The most famous format is .json format.
+	
+	Most used methods:
+	
+	GET  ---   READ
+	POST  ---   CREATE
+	PUT/PATCH   --- UPDATE
+	DELETE  ---  DELETE
+	
+Running the Project and Using Swagger:
+	--> Big run button is run with debug in Visual Studio
+	-->Small run button is run without debug is Visual Studio
+	--> If we run our project we get swagger . We get straight away to run API in swagger.
+	-->Another way we can use our browser. For get call we can directly use browser but for post,   put ,delete we need postman to check.
+	
+Understanding our Domain:
+
+	1. We will building API which has walks of  different regions.
+
+Guid Type:
+	GUID stands for Global Unique Identifier. A GUID is a 128-bit integer (16 bytes) that you can use across all computers and networks wherever a unique identifier is required.
+	
+	
+Creating Domain Models:
+	1. Create new folder --Models
+	2. Inside Models folder create another folder Domain 
+	3. Inside Domain folder-->Add new class Region
+		a. Inside Region add the required properties:
+			i. Public Guid ID {get;set;}
+			ii. Public String Code {get;set;}
+			iii. Public string Name{get;set;}
+			iv. Public double Area {get;set;}
+			v. Public double Lat {get;set;}
+			vi. Public double Long {get;set;}
+			vii. Public long Population {get;set;}
+		b. // Navigation Property -->Connection we will tell to entity framework the connection the object has
+		c. Public IEnumerable<walk> {get;set;}
+		
+	4. Inside Domain folder-->Add new class Walk
+		a. Public Guid Id{get;set;}
+		b. Public string name{get;set;}
+		c. Public double Length{get;set;}
+		d. Public Guid Region{get;set;}
+		e. Public Guid WalkDifficultyId {get;set;}
+		f. //Navigation Property
+		g. Public Region Region{get;set;}
+		h. Public WalkDifficulty {get;set;}
+		
+	5. Inside Domain folder-->Add new class WalkDifficulty
+		a. Public Guid Id{get;set;}
+		b. Public string code{get;set;}
+		
+	6. Install Entity Framework Core Nuget Packages:
+
+
+
+
+	1. Synchronus
+		a. Synchronus means "occuring at the same time"
+		b. This is where sender and reciever are Synchronus.
+		c. They both use a clock at the same rate, and it is used as a reference point for data transmission,so it occurs at regular intervals.
+		d. Fast transmission.
+		e. Needs some way of sharing it.
+		f. May have to wait briefly until data can be sent.
+	2. Asynchronus
+		a. Asynchronus transmission does not use a common timimg signal.
+		b. The devices aren't permanently synced, only during transmission.
+		c. Slow transmission,due to the extra bits and the gaps.
+		d. Cheap and easy to implement.
+		e. Can transmit when ready.
+	3. Authentication
+		a. Authentication is the act of validating that users are whom they claim to be.This is the first step in any security process.
+		b. Passwords:Usernames and passwords are the most common authentication factors.
+		c. Authentication in the form of a key. The lock on the door only grants access to someone with the correct key in much the same way that a system only grants access to users who have the correct credentials.
+		
+	4. Authorization:
+		a. Authorization in a system security is the process of giving the user permission to access a specific Resource or function.This term is often used interchangeably with access control or client privilege.
+		b. In secure environments, authorization must always follow authentication. Users should first prove that their identities are genuine before an organizaation's administrators grant them access to the requested resources.
+		c. Authorization, in the form of permissions. Once inside, the person has the authorization to access the kitchen and open the cupboard that holds the pet food. The person may not have permission to go into the bedroom for a quick nap.
+		
+		
+		
+		
+			
+	
+	
+	
+	
+	
+	
