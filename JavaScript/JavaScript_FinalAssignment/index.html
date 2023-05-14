@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Forms</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>
+            function Reload(){
+                window.location.reload();
+            }
+        </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <img src="Syncfusion_Logo.png" style="padding-top:10px;padding-left:20px;"> <strong
+                style="padding-left:10px">Library Portal</strong>  <a href="" style="padding-left:20px;color:blue;text-decoration: none;">Books</a>
+        </div>
+        <form class="form" id="form">
+            <h3>Add New Book</h3>
+
+
+            <div class="form-group">
+                <label>Category</label>
+
+                <select class="inputs" id="category" style="width:175px;height:25px;margin-left:39px;">
+
+                    <option value="IT">IT</option>
+                   
+                </select><strong><br>
+                    <span id="category_error"></span></strong>
+
+
+            </div>
+
+
+            <div class="form-group">
+                <label>Book</label>
+                <input type="text" id="bookname" onkeyup="return CheckBook(bookname.value)"
+                    onblur="return CheckBookError(bookname.value)" class="inputs"
+                    style="width:170px;height:18px;margin-top:10px;margin-left:60px"><strong><br>
+                    <span id="book_error"></span></strong>
+              
+
+            </div>
+
+
+            <div class="form-group">
+                <label>Author Email</label>
+                <input type="text" id="authormail" class="inputs" onblur=" return AuthorMailCheck(authormail.value)" 
+                    style="width:170px;height:18px;margin-top:10px;margin-left:8px"><strong><br>
+                    <span id="author_mail"></span></strong>
+
+            </div>
+
+            <div class="form-group">
+                <label>Author Name</label>
+                <input type="text" id="authorname" class="inputs" onkeyup="return AuthorName(authorname.value)"
+                    onblur=" return AuthorNameError(authorname.value)"
+                    style="width:170px;height:18px;margin-top:10px;margin-left:8px"><strong><br>
+                    <span id="author_error"></span></strong>
+
+            </div>
+
+            <div class="form-group">
+                <label>Published</label>
+                <input type="text" id="published" class="inputs" onblur="return PublishedYearCheck(published.value)"
+                    style="width:170px;height:18px;margin-top:10px;margin-left:33px"><strong><br>
+                    <span id="published_error"></span></strong>
+               
+            </div>
+
+
+            <div class="form-group">
+                <label>Price</label>
+                <input type="text" id="price" class="inputs"  onblur="return PriceCheck(price.value)"
+                    style="width:170px;height:18px;margin-top:10px;margin-left:64px"><strong><br>
+                        <span id="price_error"></span></strong>
+
+            </div>
+
+
+
+            <input class="button" type="button" value="Submit" onclick="Submit()">
+            <input  class="button"  type="reset" onclick="Reload()" value="Cancel">
+            <input  class="button"  type= "button" value="Show" onclick="ShowData()">
+            
+
+
+        </form>
+
+
+        <div class="footer">
+            <p>Copyright @2019-present Syncfusion</p>
+        </div>
+
+
+    </div>
+
+    <div class="container" id="showDatas" style="Display:none">
+
+        <div class="header">
+            <img src="Syncfusion_Logo.png" style="padding-top:10px;padding-left:20px;"> <strong
+                style="padding-left:10px">Library Portal</strong> <a href="" style="padding-left:20px;color:blue;text-decoration: none;">Books</a>
+        </div>
+        
+        <div class="table" >
+          
+            <table>
+                <h3><strong id="bookShow"></strong> Book Details</h3>
+                <tr>
+                    <td><label>Category</label></td>
+                    <td><p id="categoryId"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Book</label></td>
+                    <td ><p id="bookId"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Author Email</label></td>
+                    <td ><p id="authormailId"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Author</label></td>
+                    <td ><p id="authorId"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Published</label></td>
+                    <td > <p id="publishedId"></p></td>
+                </tr>
+                <tr>
+                    <td><label>Price</label></td>
+                    <td><p  id="priceId"></p></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="footer">
+            <p>Copyright @2019-present Syncfusion</p>
+        </div>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
