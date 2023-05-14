@@ -1,0 +1,23 @@
+	1. Packages to installl:
+			i. 
+		a. Microsoft.EntityFrameworkCore.SqlServer   -->By using this package we telling entity framewrok that we are using sql server.
+		b. Microsoft.EntityFrameworkCore.Tools
+
+
+
+                              Program.CS add the db builder.
+	1. 
+
+
+
+			i. Create Folder for Database add db Context class 
+	1. 
+
+
+			i. Add connection string in appsetting.json
+	1. 
+	
+		
+Command Line :
+	1. Add-Migration "Initial Migration"
+	2. Update-Database
