@@ -1,0 +1,52 @@
+
+@mixin setH3 {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin set1P {
+    line-height: 20px;
+}
+@mixin set1 {
+    margin-left: 200px;
+    word-spacing: 5px;
+} .firstSet1{
+   @include set1;
+}
+@mixin set2 {
+    margin-left: 40px;
+    word-spacing: 5px;
+}
+.firstSetH3{
+    @include setH3;
+}
+.firstSetP{
+    @include set1P;
+}
+
+
+.firstSet2{
+  @include set2;
+}
+.secondSet1{
+    @include set1;
+}
+.secondSet2, .secondSet3{
+    @include set2;
+}
+
+.firstSet3{
+    @include set2;
+}
+
+.secondSetH3{
+    @include setH3;
+}
+.secondSetP{
+    @include set1P;
+}
+
+.overview 
+{
+    text-align: center;
+    word-spacing: 5px;
+    line-height: 20px;
+}

@@ -1,0 +1,42 @@
+$backgroundColor:gray;
+$color:white;
+$width:10%;
+
+
+@function width($gettingValue)
+{
+    @return $width+$gettingValue;
+}
+.container{
+    display:flex;
+}
+
+.firstDiv{
+    margin-left: 5px;
+    padding-left:10px;
+    width:$width;
+    height:300px;
+    background-color: $backgroundColor;
+    color: $color;
+}
+.secondDiv{
+    margin-left: 15px;
+    padding-left:10px;
+    width:width(10);
+    background-color: $backgroundColor;
+    color: $color;
+}
+.thirdDiv{
+    margin-left: 15px;
+    padding-left:10px;
+    width:width(20);
+    background-color: $backgroundColor;
+    color: $color;
+}
+.forthDiv{
+    margin-left: 15px;
+    padding-left:10px;
+    width:width(30);
+    background-color: $backgroundColor;
+    color: $color;
+}

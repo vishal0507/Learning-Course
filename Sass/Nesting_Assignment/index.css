@@ -1,0 +1,32 @@
+.firstDiv {
+  padding-left: 250px;
+}
+
+.secondDiv {
+  padding-left: 60px;
+}
+
+.container1 h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container1 p {
+  color: grey;
+}
+
+.container2 h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container2 p {
+  color: grey;
+}
+
+.container3 h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container3 p {
+  color: grey;
+}
+/*# sourceMappingURL=index.css.map */

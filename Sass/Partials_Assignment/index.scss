@@ -1,0 +1,10 @@
+@import './textColor';
+@import './font';
+.container{
+    width: 70%;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+.para{
+    font-family:$paraFont ;
+}

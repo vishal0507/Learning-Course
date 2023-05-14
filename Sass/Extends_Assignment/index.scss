@@ -1,0 +1,75 @@
+$value:green;
+$marginLeft:40px;
+$background-color: white;
+$divHeight:500px;
+$divWidth:250px;
+
+body{
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+    text-align: center;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+.container1{
+    margin-left:220px;
+    background-color: $background-color;
+    height: $divHeight;
+    width: $divWidth;
+}
+.container2{
+    margin-left: $marginLeft;
+    background-color: $background-color;
+    height: $divHeight;
+    width: $divWidth;
+}
+.container3{
+    margin-left: $marginLeft;
+    background-color: $background-color;
+    height: $divHeight;
+    width: $divWidth;
+}
+
+.button1{
+    margin-top:125px;
+    color: orange;
+    border-radius: 15px;
+    height: 30px;
+    border-color: orange;
+    background-color: white;
+
+}
+.button2{
+    @extend .button1;
+    margin-top:105px;
+    background-color: black;
+    color: red;
+    border-color: red;
+    
+}
+.button3{
+    @extend .button1;
+    margin-top:105px;
+    background-color: green;
+    color: white;
+    border-color: black;
+
+}
+.para1{
+    color:grey;
+    font-size: medium;
+}
+.para2{
+    @extend .para1;
+    color:red;
+  
+}
+.para3{
+    @extend para1;
+    color:orange;
+    font-size: large;
+}

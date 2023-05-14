@@ -1,0 +1,74 @@
+body {
+  background-color: lightgray;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.container1 {
+  margin-left: 220px;
+  background-color: white;
+  height: 500px;
+  width: 250px;
+}
+
+.container2 {
+  margin-left: 40px;
+  background-color: white;
+  height: 500px;
+  width: 250px;
+}
+
+.container3 {
+  margin-left: 40px;
+  background-color: white;
+  height: 500px;
+  width: 250px;
+}
+
+.button1, .button2, .button3 {
+  margin-top: 125px;
+  color: orange;
+  border-radius: 15px;
+  height: 30px;
+  border-color: orange;
+  background-color: white;
+}
+
+.button2 {
+  margin-top: 105px;
+  background-color: black;
+  color: red;
+  border-color: red;
+}
+
+.button3 {
+  margin-top: 105px;
+  background-color: green;
+  color: white;
+  border-color: black;
+}
+
+.para1 {
+  color: grey;
+}
+
+.para2 {
+  color: red;
+  font-size: medium;
+}
+
+.para3 {
+  color: orange;
+  font-size: large;
+}
+/*# sourceMappingURL=index.css.map */

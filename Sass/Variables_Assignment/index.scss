@@ -1,0 +1,47 @@
+$marginLeft:40px;
+$background-color: white;
+$divHeight:400px;
+$divWidth:250px;
+
+body{
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;   
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+.container1{
+    margin-left:220px;
+    background-color: $background-color;
+    height: $divHeight;
+    width: $divWidth;
+}
+.container2{
+    margin-left: $marginLeft;
+    background-color: $background-color;
+    height: $divHeight;
+    width: $divWidth;
+}
+.container3{
+    margin-left: $marginLeft;
+    background-color: $background-color;
+    height: $divHeight;
+    width: $divWidth;
+}
+
+button{
+    color: orange;
+    border-radius: 15px;
+    height: 30px;
+    border-color: orange;
+    background-color: white;
+
+}
+.button1{
+    margin-top: 15px;
+}
