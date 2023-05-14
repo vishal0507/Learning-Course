@@ -1,0 +1,40 @@
+body {
+  background-color: lightgray;
+}
+.container {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+.container1 {
+  margin-left: 220px;
+  background-color: white;
+  height: 400px;
+  width: 250px;
+}
+.container2 {
+  margin-left: 40px;
+  background-color: white;
+  height: 400px;
+  width: 250px;
+}
+.container3 {
+  margin-left: 40px;
+  background-color: white;
+  height: 400px;
+  width: 250px;
+}
+button {
+  color: orange;
+  border-radius: 15px;
+  height: 30px;
+  border-color: orange;
+  background-color: white;
+}
+.button1 {
+  margin-top: 15px;
+}

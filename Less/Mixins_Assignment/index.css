@@ -1,0 +1,38 @@
+.firstSetH3 {
+  font-family: 'Roboto', sans-serif;
+}
+.firstSetP {
+  line-height: 20px;
+}
+.firstSet1 {
+  margin-left: 200px;
+  word-spacing: 5px;
+}
+.firstSet2 {
+  margin-left: 40px;
+  word-spacing: 5px;
+}
+.secondSet1 {
+  margin-left: 200px;
+  word-spacing: 5px;
+}
+.secondSet2,
+.secondSet3 {
+  margin-left: 40px;
+  word-spacing: 5px;
+}
+.firstSet3 {
+  margin-left: 40px;
+  word-spacing: 5px;
+}
+.secondSetH3 {
+  font-family: 'Roboto', sans-serif;
+}
+.secondSetP {
+  line-height: 20px;
+}
+.overview {
+  text-align: center;
+  word-spacing: 5px;
+  line-height: 20px;
+}
