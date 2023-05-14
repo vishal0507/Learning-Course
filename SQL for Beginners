@@ -1,0 +1,54 @@
+	• To connect to Server:
+		a. Server Type -> Select Database Engine (In order to connect SQL instance).
+		b. Server Name->  Machine\instance . Example: localhost\SQL22.
+		c. Authentication-> For SQL Authentication . We need to provide login and password.
+		
+	• After Creating in left side folder we can see Databases which has System databases which is  needed for working of SQL server. It is added by during creating of SQL Server.
+	
+	• To know version
+		○ Select @@version and run Execute or F5.
+		
+	• A database in SQL Server is made up of a collection of tables that stores a specific set of structured data. A table contains a collection of rows, also referred to as records or tuples, and columns, also referred to as attributes. Each column in the table is designed to store a certain type of information, for example, dates, names, dollar amounts, and numbers.
+
+	• Creating a Databases:
+		○ Right click database folder -> Create database ->Name : Sample1 (Using Design)
+		○ Create Database Sample2  (Using Query)
+	• When  ever we create a database  graphically using the design or using a query, the following 2 files gets generated.
+		○ .MDF file - Data File(Contains actual data)
+		○ .LDF file - Transaction log file (Used to recover the database)
+	• To rename database using Query:
+		○ Alter database DatabaseName Modify name = New DatabaseName  EX: Alter Database Sample2 Modify Name = Sample1
+	• To alter you can also use system stored procedure
+		○ Execute sp_renameDB 'OldDatabaseName';'NewDatabaseName'
+	• To Delete or Drop a database:
+		○ During Delete the database should not be in use.
+		○ Example Developer 1 is using that database but developer 2 is using the same database it cant able to be delete.
+		○ Drop Database   That You Want To Drop .  A Droping a database, deletes the LDF and MDF files.
+		○ Another way : You can drop a database, if it is currently in use. You get an error starting- Cancel drop database "NewDatabaseName" because it is currently in use.
+		○ 
+		○ So, If other users are connected, you need to put the database in single user mode and then drop the database.
+			§ Alter Database DatabaseName Set SINGLE_USER with Rollback Immediate.
+		○ With Rollback Immediate option, will rollback all incomplete transactions and closes the connection to the database.
+		○ NOTE: System databases cannot be dropped.
+	• Table
+	
+		○ Tables are database objects that contain all the data in a database. In tables, data is logically organized in a row-and-column format similar to a spreadsheet. Each row represents a unique record, and each column represents a field in the record. For example, a table that contains employee data for a company might contain a row for each employee and columns representing employee information such as employee number, name, address, job title, and home telephone number.
+		○ Use Sample ---> Sample is database folder name ..
+		○ Create Table tblGender  -- Query to create table.
+		○ {
+			§ ID int NOT NULL Primary Key,
+			§ Gender nvarchar(50)  NOT NULL
+		○ }
+			§ 
+		○ Alter table tblPerson add constraint tblPerson_GenderID_FK
+		○ Forgien Key (GenderId) reference tblGender(ID)
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
