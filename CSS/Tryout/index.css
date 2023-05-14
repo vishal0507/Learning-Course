@@ -1,0 +1,43 @@
+*{
+    background-color:aliceblue;
+}
+h1{
+    font-family:'Roboto', Courier, monospace;
+    font-size: 30px;
+}
+p{
+    font-family:'Roboto', Courier, monospace
+}
+p span{
+    font-weight: bold;
+}
+
+.intro >p{
+    font-size: 40px;
+}
+.intro h1{
+   border-style: solid;
+   border-color: orange;
+}
+
+.intro p{
+ 
+    color:wheat;
+}
+
+.text_formatting h1{ 
+    font-weight: bold;
+    text-shadow: 3px,2px rgb(194,19,19);
+    text-align:center;
+    text-decoration: underline;
+   
+}
+.text_formatting
+{
+    text-transform:capitalize;
+    text-indent: 30px;
+    letter-spacing: 3px;
+    line-height: 2;
+    word-spacing: 10px;
+}
+

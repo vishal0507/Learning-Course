@@ -1,0 +1,117 @@
+body{
+    margin-left: 220px;
+    margin-top: 100px;;
+    background-color: grey;
+ 
+}
+
+.first{
+
+    width:340px;
+    height:400px;
+    background-color: rgb(154, 49, 49);
+    padding:3%;
+    float:left;
+    color:white;
+    font-size:small;
+    font-family: 'Zen Dots';
+    
+  
+}
+
+.logo{
+    margin-top: 40px;
+}
+
+.hello{
+    margin-top: 17px;
+    margin-top: 30px;
+
+}
+
+
+.first img{
+    width: 30px;
+    height:30px;  
+  
+}
+
+.first p{
+    margin-top: 40px;
+}
+
+
+.facebook{
+   
+    width: 250px;
+    height: 30px;
+    background-color: #3b5998;
+    border-style: none;
+    color:white;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-top:6px;
+    
+
+
+}
+
+.google{
+    margin-bottom: 12px;
+    width: 250px;
+    height: 30px;
+    background-color: #D84B37;
+    border-style: none;
+    color:white;
+    text-align: left;
+}
+
+.second p{
+    color:brown;
+
+}
+.value{
+    margin-top: 1px;
+    padding: 8px;
+    width:330px
+    
+}
+
+p span{
+    color:#00acee;
+}
+
+.twitter{
+   
+    width: 250px;
+    height: 30px;
+    background-color: #00acee;
+    border-style: none;
+    color:white;
+    text-align: left;
+  
+}
+.second{
+    width:390px;
+    height:412px;
+    padding-left: 30px;
+    padding-top: 50px;
+    float:left;
+    background-color: white;
+    font-family:calibri;
+   
+
+
+}
+.checks{
+    margin-top:18px;
+}
+.logbtn{
+    margin-top:18px;
+    border-style: none;
+    background-color: red;
+    padding:5px;
+    width: 70px;
+    height: 30px;
+    color:white;
+}
