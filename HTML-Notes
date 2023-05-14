@@ -1,0 +1,153 @@
+	• <em> </em> ==>empasis 
+	• <strong> =>bold the tag
+	• The <head> tag contains all the extra 'information' about a web page 
+		○ Meta data
+		○ CSS & Javascript reference
+	• The <body> contains all visual content 
+		○ Headings,images,paragraps etc..
+	• <small> </small> =>to make text small
+	• <sub> ==>ex:h20
+	• <sup>  ==>ex:o2
+	• <pre> </pre> ==>pre format text.
+	• IMAGE TAG :
+		○ <img src=" " alt=" ">  ==>alt which is alternate of image.
+	• Links:
+		○ <a href="link-source">
+		○ Internal ->links to pages in own website
+		○ External ->links to other websites
+		○ Downloads ->Links to files
+		○ Anchors ->links to specific areas on a page
+		○ <a href=" " target="_blank">   ==>target=_blank is for to open the link in new page
+	• LISTS:
+		○ Ordered list <ol>
+			§ <ol>
+				□ <li>name</li>
+					® <li> first name </li>
+					® <li> second name </li>
+				□ <li> father name</li>
+			§ </ol>
+		○ Unordered list <ul>
+		○ Definition list  <dl>
+			§ <dl>
+				□ <dt> Unordered list> </dt>        ==>definition text
+				□ <dd> unordered list are used to unorderlly the list in the way of working with it.  ==>definition description
+				□ <dt> ordered list  </dt>
+				□ <dd>  ordered list will make the list in the ordered way which we can refer it easilly. </dd>
+				□ <dt> definition list </dt>
+				□ <dd> definition list contains terms and discreptions , much likely dictionary </dd>
+			§ </dl>
+		○ <br>-->break;
+		○ <hr> -----> horizontal row tag
+		○ <div> tag :
+			§ 'div'  is simply stands for division
+			§ Used to divide content into logical section.
+		○ ID's and Classes:
+			§ An ID is a unique identifier once used on a page
+			§ A class is an identifier of an element which can be used for multiple time in a page.
+			§ Both are used for JS and CSS.
+		○ Table :
+			§ Allow web authors to arrange data like text, images, links, other tables etc.. Into rows and columns of cells.
+			§ Consist row and column.
+			§ Can be nested.
+			§ (cell padding -->there will be space between table and cells.)  (cell  spacing---> Is used for space between the cell)
+		
+			
+			§ <table  border=" 1"  width="50px " cell padding="5" cell spacing ="2"  background="Images.png">    (background is if we need image for table back round)
+				□ <tr>
+					® <th>    </th>   ---->table header
+					® <th>     </th>
+					
+				□  <tr>   ----> table row
+					® <caption> This is merging cell example </caption>
+					® <td colspan="2"> row1,column1 </td>       ---->table data  (colspan is used to merge two column
+					® <td>  row1,column2    </td>
+				□ </tr>
+				
+				□  <tr>  
+					® <td rowspan="2">  row2,column1  </td>      ---->( rowspan="2"  used to merge two rows)
+					® <td>    row2,column2  </td>
+				□ </tr>
+					
+					
+				□  <tr>   ----> table row
+					® <td>   row3,column1  </td>      
+					® <td>    row3,column2  </td>
+				□ </tr>
+		
+		
+			
+			§ IFrames:
+				□ We can load any html document.
+				□ If we want to add youtube video in our document we will use iframe tag
+				□ <iframe src="link.com" width="5%" height="200">
+			§ Form Tag :
+				□ Is required when you want to collect some data from the site visitor.
+				□ Posts it to a back-end application such as CGI, ASP, Script or PHP etc..
+				□ Different controls are used inside form to take the values in various ways.
+				□ Attributes:
+					® Action
+					® Method  (get, post)
+					® Target  (location of the script which we need to use while submit of form)
+				□ Controls:
+					® Text Box, Radio Button, Password Box, Buttons , Check box, drop down
+			§ Events:
+				□ The change in the state of an object is known as events.
+			§ Video tag
+				□ <video src="" controls></video>
+			§ Audio
+				□ <audio controls>
+					® <source src=""></source>
+				□ </audio>
+			§ Metadata ---> a set of data that describes and gives information about other data.
+	
+			§ Meta ---->  
+			Metadata describes unseen HTML elements that. directly communicate and clarify website information for search engines, playing a critical role in. effective Search Engine Optimization for retailers. This. series of micro-communications includes page titles, description tags and other. 
+				□ <meta charset="UTF-8">  (UTF-- Unicode Transformation Format).   Broswer ku standarization kuduka tha use panrom.
+				□ <meta name="viewport" content ="width=device,intial-scale=1.0">     (viewport is used for rendering multiple devices which is used for adjustment of screen based on screen ).
+				□ <meta name="description" content="Cricket Live Updates | IPL Updates">
+				□ <meta name="keywords" content="live-updates, chennai kings ">
+				□ <meta name="robots" content="NOINDEX,NOFOLLOW"> --->if we give this no search enginee will be used if search enginee don’t want to take this as a input we can use this tag.
+	• Elements -->When we using tag and we didn’t give any additional information it is elements.
+		○ Ex:<h1> Hello </h1>
+	• Attributes-->When we using tag and we give any additional information it is elements.
+		○ Ex: <meta charset="UTF-8">
+	• Forms:
+		○ Form is very important without form we cant able to get user input.
+		○ Form is useful for getting inputs.
+		○ Facebook:
+			§ Register(Username, Password,  Email, Phone )---Submit--->Request --Server-Side(Java,C#,Python)
+		
+		 <input type="text" id="name" name="name" value="vishal">   
+		 name is just a field name we are giving. Value is become default value.
+	
+		placeholder="Enter your name" //the given value is placed inside the field box.
+	
+	HTML5 Form Validation:
+	
+	• It is a client side validation.
+		○ Required
+		
+		
+	
+		
+		
+		
+				
+				
+				
+				
+			
+				
+				
+				
+				
+				
+			
+
+
+
+
+
+				
+		
+
