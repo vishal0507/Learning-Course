@@ -1,0 +1,39 @@
+body{
+    background-color: lightskyblue;
+
+}
+h1{
+    color: orange;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    color: grey;
+}
+.container{
+    margin-top:20px;
+    margin-left:450px;
+    padding-top: 2px;
+    padding-left: 40px;
+    background-color: white;
+    width: 400px;
+  
+}
+form input{
+    width: 340px;
+    height: 30px;
+    border: 1.5px solid lightgrey;
+    border-radius: 10px;
+    padding-left: 10px;
+    
+}
+.message{
+    height:40px;
+    padding-bottom: 90px;
+}
+.submit{
+    background-color: lightskyblue;
+    margin-top: 15px;
+    height: 35px;
+    color: white;
+    margin-bottom:40px;
+}

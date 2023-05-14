@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Contact us today, and get reply with in 24 hours!</p>
+            <form>
+                <input id="name" type="text"  oninput="return nameValidation()" placeholder="Enter your name">
+                <br>
+                <span id="nameValidate"></span>
+                <br>
+                <input id="mail" type="email" oninput="return emailValidation()"  placeholder="Enter your Email Address">
+                <br>
+                <span id="mailValidate"></span>
+                <br>
+                <input id="phone" type="text" oninput="return phoneValidation()"  placeholder="Enter your phone #">
+                <br>
+                <span id="phoneValidate"></span>
+                <br>
+                <input id="website" type="text" oninput="return websiteValidation()"  placeholder="Enter your Web Site">
+                <br>
+                <span id="websiteValidate"></span>
+                <br>
+                <input id="message" class="message" type="text" placeholder="Enter your message:">
+                <input class="submit" type="button" onclick="saveData()" value="Submit">
+            </form>
+            <div class="displayData" style="display: none;">
+                <p>We have received:</p>
+                <p id="nameValue"></p>
+                <p id="mailValue"></p>
+                <p id="phoneValue"></p>
+                <p id="websiteValue"></p>
+                <p id="messageValue"></p>
+                <p>Thank you.</p>
+            </div>
+        </div>
+    </div>
+   
+
+
+</body>
+<script src="index.js">
+   
+</script>
+
+</html>
