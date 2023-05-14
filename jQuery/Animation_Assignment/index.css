@@ -1,0 +1,60 @@
+body{
+    background-color: azure;
+
+}
+
+.container1
+{
+  
+    margin-left: 90px;
+    text-align: center;
+    background-color: white;
+    width:300px;
+    position: relative;
+
+
+    
+}
+.container2
+{
+    margin-left: 180px;
+    text-align: center;
+    background-color: white;
+    width:300px;
+    margin-left: 10px;
+    position: absolute;
+    left: 500px;
+  
+  
+    
+}
+.container3
+{
+    left:900px;
+    text-align: center;
+    background-color: white;
+    width:300px;
+    margin-right: 10px;
+    position: absolute;
+
+}
+img
+{
+    width:180px;
+}
+
+p{
+    font-size: large;
+}
+button
+{
+    width: 150px;
+    height: 50px;
+    border-color: red;
+    border-radius: 50px;
+    text-align: center;
+    background-color: white;
+}
+.color{
+    background-color: yellow;
+}

@@ -1,0 +1,47 @@
+body{
+    background-color: azure;
+}
+
+.container1
+{
+    text-align: center;
+    background-color: white;
+    width:300px;
+}
+.container2
+{
+    text-align: center;
+    margin-left:50px;
+    background-color: white;
+    width:300px;
+}
+.container3
+{
+    text-align: center;
+    margin-left:50px;
+    background-color: white;
+    width:300px;
+}
+img
+{
+    width:180px;
+}
+
+p{
+    font-size: large;
+}
+.buttons
+{
+    width: 150px;
+    height: 50px;
+    border-color: red;
+    border-radius: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+#text
+{
+    margin-left:450px;
+    margin-top:50px;
+}
